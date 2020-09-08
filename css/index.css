@@ -1,0 +1,302 @@
+/*-------------------------------------------------------------------------------------------------*/
+/*Basic setup*/
+/*-------------------------------------------------------------------------------------------------*/
+body {
+  font-family: "Lato", "Arial", "sans-serif";
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-weight: 300;
+  font-size: 16px;
+}
+html {
+  text-rendering: optimizeLegibility;
+  font-family: "Lato", "Arial", "sans-serif";
+  font-weight: 300;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-------------------------------------------------------------------------------------------------*/
+/*Reusable components*/
+/*-------------------------------------------------------------------------------------------------*/
+.row {
+  margin: 0 auto;
+  max-width: 1140px;
+}
+/*Headings*/
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: rgb(247, 148, 29);
+  font-size: 240%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+  margin-top: 67px;
+}
+h2 {
+  font-size: 150%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+h2::after {
+  display: block;
+  height: 3px;
+  background-color: #ecf0f1;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.call-to-action {
+  font-weight: 300;
+  color: aliceblue;
+  text-align: left;
+}
+
+.promo {
+  font-weight: 300;
+  color: aliceblue;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  line-height: 2;
+  margin-top: 14%;
+}
+/*Links*/
+.btn:link,
+.btn:visited {
+  margin-top: 20%;
+  padding-top: 40px;
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 200px;
+  background-color: #ecf0f1;
+  border: 3px solid white;
+  font-size: 300%;
+  color: #2980b9;
+  text-transform: uppercase;
+  word-spacing: 4px;
+  margin-left: 10%;
+}
+
+.btn:hover,
+.btn:active {
+  border: 4px solid #2980b9;
+}
+
+/*-------------Paragraphs------------------------*/
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  max-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../resourses/Clipboard02.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.main-section {
+  height: 75%;
+  background-size: cover;
+  background-position: center;
+}
+.header {
+  background-color: rgb(22, 22, 22, 0.6);
+}
+
+.logo {
+  height: 135px;
+  width: auto;
+  float: right;
+  margin-top: 20px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.icon-big {
+  font-size: 500%;
+  color: #ecf0f1;
+  margin-bottom: 10px;
+}
+
+.span-1-of-3 .icon-big {
+  margin-left: 41%;
+}
+.span-1-of-3 h2 {
+  font-weight: 400;
+  color: #ecf0f1;
+}
+/*------------------------------------------------------------------------------------------------- 
+ OLD STUFF
+
+
+
+#call-to-action-container {
+  background-image: url("D:/forest2.jpg");
+  height: 300px;
+  width: 100%;
+  margin-bottom: 45px;
+  color: white;
+  text-align: center;
+  border-top: solid rgba(203, 206, 203, 0.5);
+  border-bottom: solid rgba(203, 206, 203, 0.5);
+}
+.items-container {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(128, 128, 128, 0.507);
+}
+.items {
+  font-size: 50px;
+  color: white;
+  display: inline;
+  margin-left: 5%;
+  margin-right: 5%;
+  letter-spacing: 4px;
+  text-decoration: none;
+}
+
+/*-------------------------------------------------------------------------------------------------
+/*Description*/
+/*-------------------------------------------------------------------------------------------------
+#description {
+  margin: 25px 0px 25px 0px;
+  padding: 0px 12% 0px 12%;
+  margin-bottom: 45px;
+}
+
+#description p {
+  text-align: justify;
+}
+/*-------------------------------------------------------------------------------------------------
+/*Benefits block*/
+/*-------------------------------------------------------------------------------------------------*
+
+.column-benefit {
+  line-height: 145%;
+}
+.title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.icon-benefit {
+  text-align: center;
+  font-size: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+ *-------------------------------------------------------------------------------------------------*/
+
+/*
+ .long-copy {
+  line-height: 145%;
+  width: 70%;
+  margin-left: 15%;
+}
+
+<p class="long-copy">Exclusive content, access to
+                    company visits, mentors and much more.</p>
+
+                    <p class="long-copy">Receive discounts to conferences and professional development courses.</p>
+                     <p class="long-copy">Help new olim integrate successfully in Israel.</p>
+<!-- 
+<div id='header'>
+    <img class='logo' src='resourses/gvahim_network_ logo-01 (002).png'>
+    <h1>Gvahim premium platform</h1>
+</div>
+<div id='call-to-action-container'>
+    <div class="items-container"> <a class="items"
+            href="https://icom.yaad.net/cgi-bin/yaadpay/yaadpay3new.pl?Amount=310&Coin=1&FixTash=False&Info=Gvahim%20Network%20Premium%20Membership-%20with%20discount&Masof=4500708530&MoreData=True&PageLang=ENG&Postpone=False&SendHesh=True&ShowEngTashText=True&Tash=3&UTF8out=True&action=pay&freq=1&sendemail=True&tmp=3&signature=31d541f8abcc89e7eb87c17d0df514c9d82a9affcd593882301b3827e56c3053">Join
+            us</a>
+
+        <a class="items"
+            href="https://icom.yaad.net/cgi-bin/yaadpay/yaadpay3new.pl?Amount=310&Coin=1&FixTash=False&Info=Gvahim%20Network%20Premium%20Membership-%20with%20discount&Masof=4500708530&MoreData=True&PageLang=ENG&Postpone=False&SendHesh=True&ShowEngTashText=True&Tash=3&UTF8out=True&action=pay&freq=1&sendemail=True&tmp=3&signature=31d541f8abcc89e7eb87c17d0df514c9d82a9affcd593882301b3827e56c3053"><i
+                class="fa fa-credit-card fa-lg"></i></a>
+
+
+        <p class='discount  items'>Discount</p>
+    </div>
+
+</div>
+<div id='description'>
+
+    <h1> Why Gvahim?</h1>
+    <p>
+        In April 2019 we launched the Gvahim Network platform, where professionals like you have
+        found a powerful point of connection with others that share in our mission to contribute not only to the
+        success
+        of highly qualified olim, but also provide a positive impact on the Israeli economy.
+        Since then, we have connected over 1,200 incredible talents, mentors and trailblazers through our Gvahim
+        Network
+        platform.
+        It is time to move up! By upgrading to our brand-new Premium service, you will continue building and
+        furthering
+        a strong career with the help of your own professional network, while enjoying access to optimized tools and
+        benefits available only to our Premium Gvahim Network members.
+    </p>
+
+</div>
+<div class='container box'>
+    <div class="row">
+        <div class="column-benefit col-md-4 col-xs-12 col-sm-12 benefit1">
+            <div class="icon-benefit"><i class="fa fa-chart-line icon-benefit"></i> </div>
+            <div class='benefit'>
+                <h3 class="title">Professional Growth</h3>
+            </div>
+            <div class='benefit'>Exclusive member-only content, such as articles, pages and videos, access to
+                company visits, mentors and much more.</div>
+        </div>
+        <div class="column-benefit col-md-4 col-xs-12 col-sm-12">
+            <div class="icon-benefit"> <i class="fa fa-percent icon-benefit"></i> </div>
+            <div class='benefit'>
+                <h3 class="title">Member's discounts</h3>
+            </div>
+            <div class='benefit'>Receive member-only discounts to conferences, professional development courses and
+                much more.
+            </div>
+
+        </div>
+
+        <div class="column-benefit col-md-4 col-xs-12 col-sm-12 benefit3">
+            <div class="icon-benefit"> <i class="fa fa-hands icon-benefit"></i> </div>
+            <div class='benefit'>
+                <h3 class="title">Support Gvahim </h3>
+            </div>
+            <div class='benefit'>Help new olim integrate successfully in Israel, stay informed about Gvahim's
+                progress and results.</div>
+        </div>
+    </div>
+     <p class='discount  items desc-discount'>For only 360 NIS a year<br> (less than 1 NIS a day)</p>
+
+
+</div>
+
+
+*/
